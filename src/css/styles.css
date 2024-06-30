@@ -82,8 +82,8 @@ body {
 
 .header {
   background: rgb(76, 77, 71);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, rgba(82, 82, 243, 0.463)), color-stop(79%, rgb(82, 82, 243)));
-  background: linear-gradient(180deg, rgba(82, 82, 243, 0.463) 8%, rgb(82, 82, 243) 79%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(82, 146, 243)), to(rgba(82, 82, 243, 0.475)));
+  background: linear-gradient(to bottom, rgb(82, 146, 243), rgba(82, 82, 243, 0.475));
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -134,12 +134,25 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.info__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .weather-card {
   color: #ffffff;
   font-weight: 500;
-  background: rgb(76, 77, 71);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, rgba(82, 82, 243, 0.463)), color-stop(79%, rgb(82, 82, 243)));
-  background: linear-gradient(180deg, rgba(82, 82, 243, 0.463) 8%, rgb(82, 82, 243) 79%);
+  min-width: 500px;
+  background: rgb(71, 76, 77);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(82, 146, 243)), to(rgba(82, 82, 243, 0.475)));
+  background: linear-gradient(to bottom, rgb(82, 146, 243), rgba(82, 82, 243, 0.475));
   border-radius: 5px;
   padding: 15px;
   display: -webkit-box;
@@ -148,6 +161,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;

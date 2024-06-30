@@ -1,3 +1,5 @@
+//https://www.weatherapi.com/docs/
+
 import myAxios from 'axios';
 
 export function fetchWeather(city) {
@@ -9,18 +11,11 @@ export function fetchWeather(city) {
     q: city,
   });
 
-  // const headers = {
-  //   'x-rapidapi-key': '794805e6fbmsh351591e262dc11ap1e8c3cjsn1f2eef6db9c4',
-  //   'x-rapidapi-host': 'the-weather-api.p.rapidapi.com',
-  // };
-
   const url = `${BASE_URL}${END_POINT}?${params}`;
 
   const data = fetch(url)
     .then(res => res.json())
     .catch(err => console.log(err));
 
-
   return data;
 }
-
